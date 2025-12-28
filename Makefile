@@ -7,7 +7,7 @@ LAMBDA_DIR := lambdas
 DIST_DIR := $(LAMBDA_DIR)/.dist
 
 # List all Lambda service folders
-SERVICES := create_order payment_service inventory_service notification_service analytics_service
+SERVICES := create_order payment_service inventory_service notification_service analytics_service healthcheck
 
 # Default target
 .PHONY: all

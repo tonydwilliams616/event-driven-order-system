@@ -5,5 +5,9 @@ output "sns_topic_arn" {
 
 output "ses_email_identity_arn" {
   description = "ARN of the SES email identity (if created)"
-  value       = aws_ses_email_identity.this[0].arn
+  value       = (
+    length(aws_ses_email_identity.this) > 0 
+    ? aws_ses_email_identity.this[0].arn
+    : null
+  )
 }

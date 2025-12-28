@@ -7,5 +7,6 @@ locals {
     inventory_service    = "../lambdas/inventory_service/package.zip"
     notification_service = "../lambdas/notification_service/package.zip"
     analytics_service    = "../lambdas/analytics_service/package.zip"
+    healthcheck          = "../lambdas/healthcheck/package.zip"
   }
 }
